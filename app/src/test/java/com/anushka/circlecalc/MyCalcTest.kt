@@ -20,4 +20,10 @@ class MyCalcTest {
         val result = myCalc.calculateCircumference(2.1)
         assertThat(result).isEqualTo(13.188)
     }
+
+    @Test
+    fun calculateArea_radiusGiven_returnsCorrectResult(){
+        val result = myCalc.calculateArea(2.1)
+        assertThat(result).isEqualTo(13.8474)
+    }
 }
